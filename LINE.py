@@ -3,10 +3,11 @@ import os
 import requests
 
 load_dotenv()
+# .envファイルにTOKENを書いてください
 token = os.getenv("LINE_TOKEN")
 # LINE Notifyのアクセストークンを定義
 LINE_token = token  # アクセストークンに置き換えてください
-image_path = "./images/android-chrome-192x192.png"
+image_path = "YOUR_IMAGEPATH"
 # LINEメッセージ送信の関数
 def LINE_message(msg):
     # APIエンドポイントのURLを定義
